@@ -40,7 +40,7 @@ background-image:url("https://img.freepik.com/premium-photo/business-man-using-d
 background-position: center;
 background-size:cover;
 color: white;
-transition-duration:5s;
+transition-duration:2s;
 }
 .scl{
 margin:8px;
@@ -56,7 +56,7 @@ padding:5px;
 background-position: center;
 background-size:cover;
 color: white;
-transition-duration:5s;
+transition-duration:2s;
 }
 .ool:hover{
 height:400px;
@@ -68,7 +68,7 @@ padding:5px;
 background-position: center;
 background-size:cover;
 color: white;
-transition-duration:5s;
+transition-duration:2s;
 }
 .ool{
 margin:8px;
@@ -81,6 +81,7 @@ padding:20px;
 .soci{
 color:#2B137D;
 font-size:20px;
+font:italic;
 }
 .demo{
     padding-left: 66px;
@@ -152,8 +153,14 @@ padding-left:24px;
 .arrow{
 letter-spacing:3px;
 }
-i.fa-solid.fa-arrow-right:hover{
-transform:rotate(45deg);
+.duck p{
+background-color:pink;
+height:20px;
+width:20px;
+float:right;
+position:fixed;
+right:0;
+bottom:0;
 }
 </style>
 </head>
@@ -169,10 +176,10 @@ transform:rotate(45deg);
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        <a class="nav-link" href="#home">Home <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="#service">Services</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -186,7 +193,7 @@ transform:rotate(45deg);
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">contacts</a>
+        <a class="nav-link" href="#contact">contact</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -202,7 +209,7 @@ transform:rotate(45deg);
 
 <!--carosoul start-->
 <div class="row">
-<div class="col-sm-12">
+<div class="col-sm-12"id="home">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -247,7 +254,7 @@ transform:rotate(45deg);
 <!--carousel ends-->
  
 <!--about start-->
- <div class="container">
+ <div class="container" id="service">
 <div class="row mt-5">
 <div class="col-sm-6">
 <h1><b>Starting From Dream Jobs</b></h1><br/>
@@ -444,7 +451,7 @@ transform:rotate(45deg);
 <center><i class="fa-regular fa-star" style="color: #ffffff;"></i></center>
 <center><i class="fa-regular fa-star" style="color: #ffffff;"></i></center>
 </div>
-<div class="container">
+<div class="container" id="contact">
 <div class="row">
 <div class="para">
 <div class="col-sm-12">
@@ -499,12 +506,15 @@ transform:rotate(45deg);
 <footer class="bg-body-tertiary text-center text-lg-start">
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2020 Copyright:
+    & 2020 Copyright:
     <a class="text-body" href="https://mdbootstrap.com/">MDshaaruna.com</a>
   </div>
   <!-- Copyright -->
 </footer>
 <!--footer ends-->
 
+<div class="duck">
+                        <p><a href="#">top</a></p>
+                        </div>
 </body>
 </html>
